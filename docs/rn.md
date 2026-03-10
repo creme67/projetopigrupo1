@@ -12,3 +12,4 @@ As regras que definem como a clínica opera através do aplicativo.
 
 ### 3. Ética e Documentação
 - **RN05 - Registro de Evolução**: Fotos de tratamento capturadas pelo app devem ser processadas localmente (*On-Device*) para garantir a privacidade extrema das imagens bucais do paciente.
+- **RN06 - Segurança de Dados (LGPD)**: Todos os prontuários e dados de saúde devem ser criptografados, seguindo as normas de sigilo médico-paciente.
