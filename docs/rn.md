@@ -5,7 +5,7 @@ As regras que definem como a clínica opera através do aplicativo.
 ### 1. Política de Agendamento
 | ID | Requisito | Descrição |
 |:---|:---|:---|
-|**RN01**|Antecedência de Cancelament|O paciente só pode cancelar ou reagendar sem custos até 24 horas antes do horário marcado|
+|**RN01**|Antecedência de Cancelamento|O paciente só pode cancelar ou reagendar sem custos até 24 horas antes do horário marcado|
 |**RN02**|Conflito de Horários|O sistema deve impedir que dois pacientes agendem o mesmo horário simultaneamente.|
 
 ### 2. Triagem e Inteligência
