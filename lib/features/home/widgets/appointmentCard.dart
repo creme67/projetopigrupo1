@@ -30,15 +30,20 @@ class AppointmentCard extends StatelessWidget {
                     children: [
                       Text(
                         'Check-up Geral',
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       SizedBox(height: 8),
                       Row(
                         children: [
                           Icon(Icons.person, size: 16, color: Colors.grey),
                           SizedBox(width: 4),
-                          Text('Dr. Thais Tardelli',
-                              style: TextStyle(fontSize: 12, color: Colors.grey)),
+                          Text(
+                            'Dr. Thais Tardelli',
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
                         ],
                       ),
                     ],
@@ -52,7 +57,10 @@ class AppointmentCard extends StatelessWidget {
                     children: const [
                       Text(
                         'Terça, 20 fev',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                       Text('14:40', style: TextStyle(fontSize: 16)),
                     ],
@@ -83,24 +91,34 @@ class AppointmentCard extends StatelessWidget {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF1DB954),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                   onPressed: () {},
-                  child: const Text('Confirmar Presença', style: TextStyle(color: Colors.white)),
+                  child: const Text(
+                    'Confirmar Presença',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
               ),
               const SizedBox(width: 12),
               Expanded(
                 child: OutlinedButton(
                   style: OutlinedButton.styleFrom(
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                   onPressed: () {},
-                  child: const Text('Remarcar', style: TextStyle(color: Colors.black87)),
+                  child: const Text(
+                    'Remarcar',
+                    style: TextStyle(color: Colors.black87),
+                  ),
                 ),
               ),
             ],
-          )
+          ),
         ],
       ),
     );

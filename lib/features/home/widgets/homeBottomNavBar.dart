@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+
 class HomeBottomNavBar extends StatelessWidget {
   final Color primaryColor;
   const HomeBottomNavBar({super.key, required this.primaryColor});
@@ -17,10 +18,22 @@ class HomeBottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          IconButton(icon: const Icon(Icons.home, color: Colors.white), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.edit_calendar, color: Colors.white70), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.psychology, color: Colors.white70), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.person, color: Colors.white70), onPressed: () {}),
+          IconButton(
+            icon: const Icon(Icons.home, color: Colors.white),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.edit_calendar, color: Colors.white70),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.psychology, color: Colors.white70),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.person, color: Colors.white70),
+            onPressed: () {},
+          ),
         ],
       ),
     );

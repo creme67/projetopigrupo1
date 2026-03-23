@@ -1,22 +1,27 @@
 import "package:flutter/material.dart";
 
-import 'package:pi_projeto/screens/home/widgets/sectionTitle.dart';
-import 'package:pi_projeto/screens/home/widgets/homeHeader.dart';
-import 'package:pi_projeto/screens/home/widgets/aiBanner.dart';
-import 'package:pi_projeto/screens/home/widgets/quickAccessGrid.dart';
-import 'package:pi_projeto/screens/home/widgets/appointmentCard.dart';
-import 'package:pi_projeto/screens/home/widgets/newsCarousel.dart';
-import 'package:pi_projeto/screens/home/widgets/homeBottomNavBar.dart';
-class HomeOdontoApp extends StatelessWidget {
-  const HomeOdontoApp({super.key});
+import 'package:pi_projeto/features/home/widgets/sectionTitle.dart';
+import 'package:pi_projeto/features/home/widgets/homeHeader.dart';
+import 'package:pi_projeto/features/home/widgets/aiBanner.dart';
+import 'package:pi_projeto/features/home/widgets/quickAccessGrid.dart';
+import 'package:pi_projeto/features/home/widgets/appointmentCard.dart';
+import 'package:pi_projeto/features/home/widgets/newsCarousel.dart';
+import 'package:pi_projeto/features/home/widgets/homeBottomNavBar.dart';
+class HomePage  extends StatefulWidget {
+  const HomePage({super.key});
 
   static const Color primaryColor = Color(0xFFB86B77);
   static const Color bgColor = Color(0xFFF4F6F9);
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: bgColor,
+      backgroundColor: HomePage.bgColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -24,7 +29,7 @@ class HomeOdontoApp extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                HomeHeader(primaryColor: primaryColor),
+                HomeHeader(primaryColor: HomePage.primaryColor),
                 SizedBox(height: 24),
                 SectionTitle(title: 'Próximo Agendamento'),
                 SizedBox(height: 12),
@@ -36,7 +41,7 @@ class HomeOdontoApp extends StatelessWidget {
                 SizedBox(height: 24),
                 SectionTitle(title: 'Acesso Rápido'),
                 SizedBox(height: 12),
-                QuickAccessGrid(primaryColor: primaryColor),
+                QuickAccessGrid(primaryColor: HomePage.primaryColor),
                 SizedBox(height: 24),
                 SectionTitle(title: 'Notícias e Dicas'),
                 SizedBox(height: 12),
@@ -46,7 +51,7 @@ class HomeOdontoApp extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: HomeBottomNavBar(primaryColor: primaryColor),
+      bottomNavigationBar: HomeBottomNavBar(primaryColor: HomePage.primaryColor),
     );
   }
 }
