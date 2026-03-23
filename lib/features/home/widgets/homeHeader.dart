@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+
 class HomeHeader extends StatelessWidget {
   final Color primaryColor;
   const HomeHeader({super.key, required this.primaryColor});
@@ -23,14 +24,15 @@ class HomeHeader extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Bem vindo Matheus',
+                  'Bem vindo Matheus PDM',
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Text(
-                  'dev by Matheuy',
+                  'dev by Matheus PDM',
                   style: TextStyle(color: Colors.white70, fontSize: 12),
                 ),
               ],
@@ -39,7 +41,7 @@ class HomeHeader extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.menu, color: Colors.white),
             onPressed: () {},
-          )
+          ),
         ],
       ),
     );

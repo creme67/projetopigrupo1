@@ -25,13 +25,17 @@ class AIBanner extends StatelessWidget {
                 const Text(
                   'Tire suas dúvidas agora\ncom a IA Dentista',
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold),
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 const SizedBox(height: 16),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 8,
+                  ),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
@@ -47,7 +51,7 @@ class AIBanner extends StatelessWidget {
           ),
           const Expanded(
             flex: 1,
-            child: Icon(Icons.smart_toy, color: Colors.white, size: 70),
+            child: Image(image: AssetImage('assets/images/ai_assistant.png')),
           ),
         ],
       ),

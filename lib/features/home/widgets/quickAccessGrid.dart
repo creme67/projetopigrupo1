@@ -9,10 +9,26 @@ class QuickAccessGrid extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        QuickAccessItem(icon: Icons.edit_calendar, label: 'nova\nconsulta', color: primaryColor),
-        QuickAccessItem(icon: Icons.folder_open, label: 'Meus\nExames', color: primaryColor),
-        QuickAccessItem(icon: Icons.badge_outlined, label: 'Carteirinha', color: primaryColor),
-        QuickAccessItem(icon: Icons.phone_in_talk, label: 'Emergência', color: primaryColor),
+        QuickAccessItem(
+          icon: Icons.edit_calendar,
+          label: 'nova\nconsulta',
+          color: primaryColor,
+        ),
+        QuickAccessItem(
+          icon: Icons.folder_open,
+          label: 'Meus\nExames',
+          color: primaryColor,
+        ),
+        QuickAccessItem(
+          icon: Icons.badge_outlined,
+          label: 'Carteirinha',
+          color: primaryColor,
+        ),
+        QuickAccessItem(
+          icon: Icons.phone_in_talk,
+          label: 'Emergência',
+          color: primaryColor,
+        ),
       ],
     );
   }
@@ -56,7 +72,10 @@ class QuickAccessItem extends StatelessWidget {
             label,
             textAlign: TextAlign.center,
             style: const TextStyle(
-                fontSize: 10, fontWeight: FontWeight.bold, height: 1.1),
+              fontSize: 10,
+              fontWeight: FontWeight.bold,
+              height: 1.1,
+            ),
           ),
         ],
       ),
