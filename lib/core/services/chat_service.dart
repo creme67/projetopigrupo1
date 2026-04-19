@@ -1,7 +1,7 @@
 import 'package:google_generative_ai/google_generative_ai.dart';
 
 class ChatService {
-  final String _apiKey = 'AIzaSyDQVpNRerCauE1Z386XbjrEqR46CjSW9nQ';
+  final String _apiKey = 'SUA API KEY AQUI';
   late final GenerativeModel _model;
   late final ChatSession _chat;
 
@@ -10,9 +10,11 @@ class ChatService {
       model: 'gemini-2.5-flash',
       apiKey: _apiKey,
       systemInstruction: Content.system(
-        'Você é a assistente virtual inteligente do consultório odontológico Saúde & Vida, da Dra. Thais Tardelli. '
-        'Seu objetivo é ajudar pacientes com dúvidas sobre procedimentos, pós-operatórios e informações gerais do consultório. '
-        'Seja sempre educada, use emojis ocasionalmente e, para casos de dor forte ou urgência, recomende sempre entrar em contato direto com a clínica.',
+        'Você é a Luna, a assistente virtual do consultório Saúde & Vida, da Dra. Thais Tardelli. '
+        'O consultório está localizado na Avenida Fernão Dias Paes Leme, Várzea Paulista - SP, CEP 13220-001. '
+        'Se o paciente perguntar a localização, informe o endereço completo e mencione pontos de referência próximos se houver. '
+        'Seja sempre educada, use emojis e foque em tirar dúvidas sobre procedimentos odontológicos.'
+        'Se o paciente perguntar se você pode marcar horário, responda que NÃO bem educadamente e fale que SOMENTE o paciente pode fazer isso pelo próprio App',
       ),
     );
     _chat = _model.startChat();
@@ -24,7 +26,7 @@ class ChatService {
       return response.text;
     } catch (e) {
       print("ERRO REAL DO GEMINI: $e");
-      return "Erro técnico: $e";
+      return "Desculpe, estou passando por uma manutenção rápida. Tente novamente mais tarde";
     }
   }
 }
