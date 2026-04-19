@@ -189,10 +189,12 @@ class _ChatPageState extends State<ChatPage> {
 
   Widget _buildSugestaoChips() {
     final sugestoes = [
-      "Marcar horário",
-      "Quero ajuda",
+      "Oq é Tártaro?",
+      "Cárie",
       "Sensibilidade",
+      "Clareamento",
       "Localização",
+      "Qual seu nome?",
     ];
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
